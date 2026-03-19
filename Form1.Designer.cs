@@ -32,6 +32,7 @@
             myTextBox = new TextBox();
             mylistBox = new ListBox();
             btnTransmit = new Button();
+            lblCount = new Label();
             SuspendLayout();
             // 
             // lblEchoMessenger
@@ -47,26 +48,27 @@
             // 
             // myTextBox
             // 
-            myTextBox.Font = new Font("한컴 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            myTextBox.Location = new Point(27, 372);
+            myTextBox.Font = new Font("한컴 고딕", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            myTextBox.Location = new Point(27, 348);
             myTextBox.Name = "myTextBox";
-            myTextBox.Size = new Size(588, 46);
+            myTextBox.Size = new Size(588, 43);
             myTextBox.TabIndex = 1;
+            myTextBox.TextChanged += myTextBox_TextChanged;
             // 
             // mylistBox
             // 
-            mylistBox.Font = new Font("한컴 고딕", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            mylistBox.Font = new Font("한컴 고딕", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
             mylistBox.FormattingEnabled = true;
             mylistBox.Location = new Point(27, 81);
             mylistBox.Name = "mylistBox";
-            mylistBox.Size = new Size(738, 262);
+            mylistBox.Size = new Size(738, 249);
             mylistBox.TabIndex = 2;
             // 
             // btnTransmit
             // 
             btnTransmit.BackColor = Color.FromArgb(128, 255, 128);
             btnTransmit.Font = new Font("한컴 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            btnTransmit.Location = new Point(621, 357);
+            btnTransmit.Location = new Point(621, 348);
             btnTransmit.Name = "btnTransmit";
             btnTransmit.Size = new Size(144, 75);
             btnTransmit.TabIndex = 3;
@@ -75,12 +77,24 @@
             btnTransmit.Click += btnTransmit_Click;
             btnTransmit.KeyDown += btnTransmit_KeyDown;
             // 
+            // lblCount
+            // 
+            lblCount.AutoSize = true;
+            lblCount.Font = new Font("한컴 고딕", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblCount.Location = new Point(27, 397);
+            lblCount.Name = "lblCount";
+            lblCount.Size = new Size(130, 26);
+            lblCount.TabIndex = 4;
+            lblCount.Text = "현재대화: 0개";
+            lblCount.Click += lblCount_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(800, 450);
+            Controls.Add(lblCount);
             Controls.Add(btnTransmit);
             Controls.Add(mylistBox);
             Controls.Add(myTextBox);
@@ -98,5 +112,6 @@
         private TextBox myTextBox;
         private ListBox mylistBox;
         private Button btnTransmit;
+        private Label lblCount;
     }
 }
