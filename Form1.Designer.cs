@@ -39,7 +39,7 @@
             lblEchoMessenger.AutoSize = true;
             lblEchoMessenger.Font = new Font("한컴 고딕", 25.8F, FontStyle.Bold, GraphicsUnit.Point, 129);
             lblEchoMessenger.ForeColor = Color.Blue;
-            lblEchoMessenger.Location = new Point(27, 22);
+            lblEchoMessenger.Location = new Point(27, 9);
             lblEchoMessenger.Name = "lblEchoMessenger";
             lblEchoMessenger.Size = new Size(348, 56);
             lblEchoMessenger.TabIndex = 0;
@@ -47,10 +47,10 @@
             // 
             // myTextBox
             // 
-            myTextBox.Font = new Font("한컴 고딕", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            myTextBox.Location = new Point(27, 375);
+            myTextBox.Font = new Font("한컴 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            myTextBox.Location = new Point(27, 372);
             myTextBox.Name = "myTextBox";
-            myTextBox.Size = new Size(588, 43);
+            myTextBox.Size = new Size(588, 46);
             myTextBox.TabIndex = 1;
             // 
             // mylistBox
@@ -66,13 +66,14 @@
             // 
             btnTransmit.BackColor = Color.FromArgb(128, 255, 128);
             btnTransmit.Font = new Font("한컴 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            btnTransmit.Location = new Point(621, 363);
+            btnTransmit.Location = new Point(621, 357);
             btnTransmit.Name = "btnTransmit";
             btnTransmit.Size = new Size(144, 75);
             btnTransmit.TabIndex = 3;
             btnTransmit.Text = "전송";
             btnTransmit.UseVisualStyleBackColor = false;
             btnTransmit.Click += btnTransmit_Click;
+            btnTransmit.KeyDown += btnTransmit_KeyDown;
             // 
             // Form1
             // 
@@ -86,6 +87,7 @@
             Controls.Add(lblEchoMessenger);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
