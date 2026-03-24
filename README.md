@@ -19,5 +19,6 @@
 ## 실행 화면 (과제1)
 - 과제1 코드의 실행 스크린샷
 
-![과제1 실행화면](<img width="797" height="485" alt="과제1" src="https://github.com/user-attachments/assets/4c0b53db-eeac-4844-a374-4f9fb5be6009" />)
+![과제1 실행화면]<img width="797" height="485" alt="과제1" src="https://github.com/user-attachments/assets/ef643d1c-756a-486c-b263-9323821a45d4" />
+
 
