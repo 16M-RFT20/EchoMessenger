@@ -1,4 +1,4 @@
-<img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/d2032331-743b-48ef-82aa-da04ed0ee6eb" /># (C# 코딩) 에코 메신저
+# (C# 코딩) 에코 메신저
 
 ## 개요
 - C# 프로그래밍 학습
